@@ -5,21 +5,21 @@
 class Lnka < Formula
   desc "CLI tool for managing symlinks with interactive Terminal UI"
   homepage "https://github.com/marco-arnold/lnka"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marco-arnold/lnka/releases/download/v1.0.2/lnka_1.0.2_Darwin_x86_64.tar.gz"
-      sha256 "0f5cba5183e467ba281f47f0c8ecfec3e297dfa66c6118acaccf2e741a7a6117"
+      url "https://github.com/marco-arnold/lnka/releases/download/v1.0.3/lnka_1.0.3_Darwin_x86_64.tar.gz"
+      sha256 "4b14a77aa64239d1d75d13cf5586bb4c5752654c98f312c4e6c862711a72b2be"
 
       def install
         bin.install "lnka"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marco-arnold/lnka/releases/download/v1.0.2/lnka_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "dbc487006253ccfc663c0e2158afb5a9e11965f6e11ed279f020e2294795bc52"
+      url "https://github.com/marco-arnold/lnka/releases/download/v1.0.3/lnka_1.0.3_Darwin_arm64.tar.gz"
+      sha256 "bbbb14fd6cc5ce06d2ef2f65738e71ed9b12c59eda74c2e0e68203150dc6481a"
 
       def install
         bin.install "lnka"
@@ -29,15 +29,15 @@ class Lnka < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marco-arnold/lnka/releases/download/v1.0.2/lnka_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "39d8a3d1160d138dddaf5dfbb8e8029261aacbe7b5ca1e255439317285efcb20"
+      url "https://github.com/marco-arnold/lnka/releases/download/v1.0.3/lnka_1.0.3_Linux_x86_64.tar.gz"
+      sha256 "948fa52160d2308f63e501fb1d8060abf42b460d2731125cc4f740a783dc50f2"
       def install
         bin.install "lnka"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marco-arnold/lnka/releases/download/v1.0.2/lnka_1.0.2_Linux_arm64.tar.gz"
-      sha256 "9c3dc962bc0360d6d942cd010ac2534b62306cfe5cff97fa8afa1555d5ffa76d"
+      url "https://github.com/marco-arnold/lnka/releases/download/v1.0.3/lnka_1.0.3_Linux_arm64.tar.gz"
+      sha256 "01f4302c64947284d7a23a96f6a8af477352101f787c366bd875c03f08e6bf1a"
       def install
         bin.install "lnka"
       end
